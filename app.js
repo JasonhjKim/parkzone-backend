@@ -8,6 +8,9 @@ const express = require('express'),
 const PORT = 3000;
 const secret = require('./secret');
 
+
+const authRoute = require('./routes/');
+
 app.get('/', (req, res) => {
     res.json({
         response: "Hey this is a test route, if you see this message... good job (Y)"
@@ -74,6 +77,7 @@ app.get('/sample', (req, res) => {
     ])
 })
 
+authRoute(app);
 
 
 
@@ -81,6 +85,6 @@ app.listen(PORT, () => {
     console.log(`Server is listening on ${PORT}`)
 })
 
-mongoose.connect(`mongodb://${secret.id}:${secret.pass}@ds221115.mlab.com:21115/parkzone`,  { useNewUrlParser: true }, () => {
+mongoose.connect(`mongodb://${secret.id}:${secret.pass}@ds221115.mlab.com:21115/parkzone`,  { useNewUrlParser: true,  useCreateIndex: true }, () => {
     console.log(`Database server is connected`);
 })
