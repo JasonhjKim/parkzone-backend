@@ -17,7 +17,7 @@
 ```POST /register```
 
 | Path Params  | Type | Required | Description |
-| ------------- | ------------- | ------------- | ------------- |
+| ------------- | ------------- | :-----------: | ------------- |
 | `email`  | String | yes | email address of registering user  |
 | `password`  | String | yes | password of registering user; later be hashed  |
 | `name` | String | yes | full name of registering user  |
@@ -46,7 +46,7 @@ User has not entered email or passsword / User already registered
 ```POST /login```
 
 | Path Params  | Type | Required | Description |
-| ------------- | ------------- | ------------- | ------------- |
+| ------------- | ------------- | :-----------: | ------------- |
 | `email`  | String | yes | email address of registered user |
 | `password`  | String | yes | password of registered user |
 
