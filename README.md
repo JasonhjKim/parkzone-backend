@@ -64,7 +64,7 @@ User has successfully logged in
   "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzVmNjk4NDliN2I2MGQzYjViYjUwYTQiLCJpYXQiOjE1NDk3NTc2Njk5NjV9.ko4oJ_3rrqNcMD90Kyy_ZiAZo4ROkCLPveEUeuOjK60"
  }
 ```
-:red_circle: **422 Error**
+:red_circle: **422: Error**
 User has entered wrong email or password / Not a registered user
 ```json
 {
