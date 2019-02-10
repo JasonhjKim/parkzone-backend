@@ -6,20 +6,12 @@
 3. download dependencies ```npm instal``
 4. start server by ```node app.js```
 
-### Dependencies
-- express
-- morgan
-- passport
-- passport-local
-- passport-jwt
-- jwt-simple
-- bcryp-nodejs
-- cors
-- body-parser
+### Table of Content
+- [Register][###Register]
 
 ## API
 
-#### Register
+### Register
 
 ```GET /register```
 
