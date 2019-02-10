@@ -8,8 +8,11 @@ const express = require('express'),
 const PORT = 3000;
 const secret = require('./secret');
 
-
 const authRoute = require('./routes/');
+
+app.use(bodyParser.json({ type: "*/*" }))
+app.use(cors());
+app.use(morgan('combined'));
 
 app.get('/', (req, res) => {
     res.json({

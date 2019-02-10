@@ -9,7 +9,8 @@ function tokenForUser(user) {
 }
 
 exports.register = function(req, res, next) {
-    const { email, password } = req.body
+    console.log(req)
+    const { email, password, name } = req.body
     if (!email || !password) {
         return (res.status(422).send({ err: "You must provide email and password" }))
     }
@@ -30,8 +31,9 @@ exports.register = function(req, res, next) {
 }
 
 exports.login = function(req, res, next) {
+    console.log(req.user)
     res.json({
-        token: tokenForUser,
-        ...req.user
+        ...req.user._doc,
+        token: tokenForUser(req.user),
     })
 }
