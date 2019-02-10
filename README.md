@@ -6,11 +6,12 @@
 3. download dependencies ```npm instal``
 4. start server by ```node app.js```
 
+## API
+
 ### Table of Content
 - [Register](#Register)
 - [Login](#Login)
 
-## API
 
 ### Register
 
@@ -41,6 +42,7 @@ User has not entered email or passsword / User already registered
   "err": "some error message"
 }
 ```
+
 ### Login
 
 ```POST /login```
