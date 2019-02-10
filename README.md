@@ -15,11 +15,11 @@
 
 ```GET /register```
 
-| Path Params  | Type | Description |
-| ------------- | ------------- | ------------- |
-| email  | String  | email address of registering user  |
-| password  | String  | password of registering user; later be hashed  |
-| name  | String  | full name of registering user  |
+| Path Params  | Type | Required | Description |
+| ------------- | ------------- | ------------- | ------------- |
+| `email`  | String  | yes | email address of registering user  |
+| `password`  | String  | yes | password of registering user; later be hashed  |
+| `name` | String  | yes | full name of registering user  |
 
 :white_check_mark: **200: OK**
 User hase been successfully registered.
