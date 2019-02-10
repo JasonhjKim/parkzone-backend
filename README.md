@@ -7,7 +7,7 @@
 4. start server by ```node app.js```
 
 ### Table of Content
-- [Register](###Register)
+- [Register](#Register)
 
 ## API
 
