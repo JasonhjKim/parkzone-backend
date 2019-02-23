@@ -3,16 +3,19 @@ const express = require('express'),
       morgan = require('morgan'),
       cors = require('cors'),
       bodyParser = require('body-parser'),
-      mongoose = require('mongoose');
+      mongoose = require('mongoose'),
+      passport = require('passport');
 
 const PORT = 3000;
 const secret = require('./secret');
 
 const authRoute = require('./routes/');
+const plRoute = require('./routes/pl');
 
 app.use(bodyParser.json({ type: "*/*" }))
 app.use(cors());
 app.use(morgan('combined'));
+app.use(passport.initialize());
 
 app.get('/', (req, res) => {
     res.json({
@@ -81,6 +84,7 @@ app.get('/sample', (req, res) => {
 })
 
 authRoute(app);
+// plRoute(app);
 
 
 
